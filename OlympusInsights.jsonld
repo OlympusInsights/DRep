@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "OlympusInsights",
+    "motivations": "Olympus Insights wants to be a DRep to drive meaningful change within the Cardano ecosystem by leveraging our expertise in education and blockchain. Our mission is to empower individuals worldwide through accessible learning, making Cardano and Web3 knowledge available to everyone. As a DRep, we will advocate for decentralised governance that reflects the diverse needs of the community, ensuring that Cardano’s growth is inclusive and sustainable.\n\nOur professional experience building educational platforms, like OLI, has shown us the transformative power of knowledge, and we believe this can drive Cardano adoption globally. By representing the community, we will ensure that every decision made benefits the broader ecosystem and pushes Cardano forward.",
+    "objectives": "Olympus Insights is committed to being a strong voice for the Cardano community as a DRep, ensuring that the interests and values of the broader ecosystem are upheld in governance decisions. We highly value driving Cardano adoption through education and accessible learning opportunities, empowering people worldwide to become knowledgeable about Cardano and the wider Web3 space. By leveraging our deep understanding of blockchain technology and educational empowerment, we aim to drive thoughtful and progressive changes that benefit the entire community. Our role as a DRep is to listen, advocate, and vote on behalf of those who entrust us with their delegation, ensuring that Cardano’s governance evolves in a decentralised, inclusive, and sustainable direction. Together, we will help shape a brighter future for Cardano.",
+    "paymentAddress": "addr1qx64fkh7d8erkpg7wv9rxunkche7wwqelrtntdyh94sdq6zq07xqvnzhacsnk96seyzlahtehzswgaxpc7c8h53rlkksv5r4v9",
+    "qualifications": "",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Linktree",
+        "uri": "https://linktr.ee/olympusinsights"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter",
+        "uri": "https://x.com/OlympusInsights"
+      },
+      {
+        "@type": "Identity",
+        "label": "Discord",
+        "uri": "https://discord.gg/uhxY83UMDf"
+      }
+    ]
+  }
+}
